@@ -250,11 +250,38 @@ http://localhost/PropFlow-CRM/
 ```
 
 ### 8. Log in
-Register a new account at `/register.php`, or use the seeded demo accounts (see `database/propflow_crm.sql`) to log in as Admin or Sales and get redirected to the matching dashboard:
+Register a new account at `/register.php`, or use the seeded demo accounts below to log in as Admin or Sales and get redirected to the matching dashboard:
 ```text
 Admin → admin/dashboard.php
 Sales → sales/dashboard.php
 ```
+
+---
+
+## Demo Login Credentials
+
+Use these seeded accounts (from `database/propflow_crm.sql`) to try out the live app or a local install without registering a new user.
+
+| Role | Email | Password |
+|---|---|---|
+| Admin | `admin@propflow.com` | `Admin@123` |
+| Sales | `sales@propflow.com` | `Sales@123` |
+
+> These are demo credentials for evaluation purposes only. Change or remove them before using this schema in any real deployment.
+
+### Adding a new employee (Admin)
+
+From **Admin → Employees → + Add Employee**, an Admin can create additional Sales accounts. Example:
+
+| Field | Value |
+|---|---|
+| Name | Sales Executive |
+| Email | `sales@propflow.com` |
+| Role | Sales |
+| Status | Active |
+| Password | `sales123` |
+
+The password entered here is hashed before being stored and is used by that employee to log in going forward — it does not need to match the password shown in a screenshot or doc once changed.
 
 ---
 
