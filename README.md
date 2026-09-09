@@ -265,7 +265,7 @@ Use these seeded accounts (from `database/propflow_crm.sql`) to try out the live
 | Role | Email | Password |
 |---|---|---|
 | Admin | `admin@propflow.com` | `Admin@123` |
-| Sales | `sales@propflow.com` | `Sales@123` |
+| Sales | `salese1@propflow.com` | `sales123` |
 
 > These are demo credentials for evaluation purposes only. Change or remove them before using this schema in any real deployment.
 
@@ -276,7 +276,7 @@ From **Admin → Employees → + Add Employee**, an Admin can create additional 
 | Field | Value |
 |---|---|
 | Name | Sales Executive |
-| Email | `sales@propflow.com` |
+| Email | `salese1@propflow.com` |
 | Role | Sales |
 | Status | Active |
 | Password | `sales123` |
